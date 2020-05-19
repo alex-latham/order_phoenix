@@ -1,7 +1,7 @@
 module Potter
   class Character
     attr_reader :id, :name, :role, :house, :patronus
-    
+
     def initialize(character_data)
       @id = character_data[:_id]
       @name = character_data[:name]
