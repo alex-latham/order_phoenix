@@ -16,9 +16,6 @@ class PotterService
   end
 
   def conn
-    Faraday.new(url: 'https://www.potterapi.com') do |f|
-      f.adapter Faraday.default_adapter
-    end
+    Faraday.new(url: 'https://www.potterapi.com')
   end
-
 end
