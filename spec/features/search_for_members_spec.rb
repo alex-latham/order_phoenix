@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "User" do
-  it "can search for members of the Order of the Phoenix" do
+  it "can search for members of the Order of the Phoenix by character house" do
     visit root_path
     select 'Gryffindor', from: :house
     click_button 'Search For Members'
