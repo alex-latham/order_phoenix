@@ -7,6 +7,7 @@ RSpec.describe "User" do
     click_button 'Search For Members'
 
     expect(current_path).to eq(search_path)
+    expect(page).to have_content("Order of the Phoenix: Gryffindor")
     expect(page).to have_content("Total Members: 21")
 
     within('#members') do

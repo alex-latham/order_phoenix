@@ -1,4 +1,4 @@
-<h1>Results</h1>
+<h1>Order of the Phoenix: <%= params[:house] %></h1>
 <p>Total Members: <%= @members.length %></p>
 <table id="members">
   <tr>
@@ -8,11 +8,11 @@
     <th>Patronus</th>
   </tr>
   <% @members.each do |member| %>
-  <tr id="member-<%= member.id %>">
-      <td><%= member.name %></td>
-      <td><%= member.role %></td>
-      <td><%= member.house %></td>
-      <td><%= member.patronus %></td>
-  </tr>
+    <tr id="member-<%= member.id %>">
+        <td><%= member.name %></td>
+        <td><%= member.role %></td>
+        <td><%= member.house %></td>
+        <td><%= member.patronus %></td>
+    </tr>
   <% end %>
 </table>
